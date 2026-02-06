@@ -1,13 +1,15 @@
-# Amazon Basic Automation Framework
+# Amazon Search Automation Framework
 
-This is a **basic industry-level Selenium Test Automation Framework** built using:
+This is a simple Selenium automation framework created for automating Amazon search functionality.
+
+The framework is built using:
 
 - Java  
 - Selenium WebDriver  
 - TestNG  
 - Maven  
 - Page Object Model (POM)  
-- Data Driven Testing (Excel)  
+- Data Driven Testing using Excel  
 - Extent Reports  
 - Log4j Logging  
 - Screenshot on Failure  
@@ -15,16 +17,16 @@ This is a **basic industry-level Selenium Test Automation Framework** built usin
 
 ---
 
-## 🚀 Features
+## 📌 Framework Features
 
-✔ Page Object Model Design  
-✔ TestNG Framework  
-✔ DataProvider with Excel Integration  
-✔ Cross Browser Testing (Chrome & Edge)  
-✔ HTML Extent Reports  
-✔ Automatic Screenshot on Test Failure  
+✔ Page Object Model design pattern  
+✔ TestNG based test execution  
+✔ Data driven testing using Excel  
+✔ Cross browser support (Chrome & Edge)  
+✔ HTML Extent Report generation  
+✔ Automatic screenshot capture on failure  
 ✔ Logging using Log4j  
-✔ Easy to maintain and scalable structure  
+✔ Easy to maintain and reusable structure  
 
 ---
 
@@ -53,33 +55,31 @@ AmazonBasicFramework
 └── listeners
 └── TestListener.java
 
-````
+```
 
 ---
 
 ## 🛠 Technologies Used
 
-| Technology | Purpose |
-|-----------|--------|
+| Tool / Library | Purpose |
+|----------------|--------|
 | Java | Programming Language |
 | Selenium | Web Automation |
 | TestNG | Test Execution |
-| Maven | Build Tool |
-| Apache POI | Excel Reading |
-| Extent Reports | Reporting |
+| Maven | Build Management |
+| Apache POI | Excel Data Reading |
+| Extent Reports | Test Reporting |
 | Log4j | Logging |
-| WebDriverManager | Browser Drivers |
+| WebDriverManager | Browser Driver Setup |
 
 ---
 
 ## ⚙ Prerequisites
 
-Before running this project, make sure you have:
-
-- Java 11 or above  
+- Java 11 or higher  
 - Maven installed  
-- IntelliJ IDEA / Eclipse  
-- Chrome or Edge browser  
+- IntelliJ IDEA or Eclipse  
+- Google Chrome or Microsoft Edge browser  
 
 ---
 
@@ -88,46 +88,51 @@ Before running this project, make sure you have:
 ### Option 1 – From IntelliJ
 
 1. Import project as Maven project  
-2. Right click on **testng.xml**  
-3. Click **Run**
+2. Open **testng.xml**  
+3. Right click → Run  
 
 ---
 
-### Option 2 – Using Maven Command
+### Option 2 – From Command Line
 
 Open terminal in project folder and run:
 
-```bash
+```
+
 mvn clean test
-````
+
+```
 
 ---
 
 ## 🧪 Test Data
 
-Test data is maintained in:
+All test data is maintained in:
 
 ```
+
 TestData.xlsx
-```
 
-You can add or modify search keywords directly in Excel without changing code.
+````
+
+You can add or modify search keywords in Excel without changing the code.
 
 ---
 
-## 🧾 Reports
+## 📊 Reports and Logs
 
-After execution the following reports are generated:
+After execution:
 
-* **ExtentReport.html** – Detailed execution report
-* **Screenshots** – Captured automatically for failed tests
+- **ExtentReport.html** is generated for detailed test results  
+- Screenshots are captured automatically for failed tests  
+- Logs are printed using Log4j  
 
 ---
 
 ## 🌐 Browsers Supported
 
-* Google Chrome
-* Microsoft Edge
+- Google Chrome  
+- Microsoft Edge  
 
 Browser can be selected from **testng.xml**
 
@@ -135,65 +140,21 @@ Example:
 
 ```xml
 <parameter name="browser" value="chrome"/>
-```
+````
 
 ---
 
-## 🧩 Key Framework Components
+## 📄 Description
 
-### BaseTest
-
-Handles browser setup and teardown.
-
-### POM Classes
-
-Contains page elements and actions.
-
-### Test Classes
-
-Contains actual TestNG test cases.
-
-### Utilities
-
-* Excel reading
-* Logging
-* Reporting
-* Screenshot capture
-
----
-
-## 📌 Future Enhancements
-
-This framework can be further enhanced by adding:
-
-* Parallel Execution
-* Jenkins Integration
-* API Automation
-* Cucumber BDD
-* Allure Reports
+This framework demonstrates a basic industry-level automation approach using Selenium and TestNG with POM design pattern.
+It is created for learning and interview preparation purposes.
 
 ---
 
 ## 👤 Author
 
-Automation Framework created for learning and interview preparation purposes.
-
----
-
-## 📄 License
-
-This project is open source and free to use.
+Created as part of Selenium Automation Practice Project.
 
 ```
 
 ---
-
-If you want, I can also help you:
-
-👉 Add a **.gitignore file** for Java/Maven  
-👉 Create a professional GitHub project description  
-
-Just say:
-
-**“Create .gitignore for this project”** 😊
-```
